@@ -10,8 +10,7 @@ This project is a decentralized healthcare application that allows patients to r
 - [Installation](#installation)
 - [Usage](#usage)
 - [Deployment](#deployment)
-- [Testing](#testing)
-- [Contributing](#contributing)
+- [Project_Structure](#Project_Structure)
 - [License](#license)
 
  ## Introduction
@@ -157,32 +156,31 @@ Example Usage
         Run the getPatientRecords function with the patient ID to fetch the records.
 
 
-Project Structure
+## Project_Structure
 
-healthcare-dapp/
+Blockchain-Healthcare/
+├── .env
+├── .gitignore
 ├── README.md
-├── src
-│   ├── App.css
-│   ├── App.js
-│   ├── App.test.js
-│   ├── Healthcare.js
-│   ├── index.css
-│   └── index.js
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   ├── logo192.png
-│   ├── logo512.png
-│   ├── manifest.json
-│   └── robots.txt
-├── package-lock.json
+├── foundry.toml
 ├── package.json
-├── Healthcare.sol
-├── node_modules
-├── script
-│   └── Deploy.s.sol
-└── foundry.toml
+├── package-lock.json
+├── script/
+│   └── Deploy.sol
+├── src/
+│   ├── HealthcareRecords.sol
+│   └── Healthcare.js
+├── public/
+│   ├── index.html
+│   └── manifest.json
+├── tests/
+│   └── HealthcareRecords.t.sol
+├── lib/
+│   └── forge-std/
+├── .vscode/
+│   └── settings.json
+└── App.css
 
-License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
