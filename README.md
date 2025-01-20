@@ -62,7 +62,7 @@ Before you begin, ensure you have the following installed:
 - [npm](https://www.npmjs.com/)
 - [Foundry](https://book.getfoundry.sh/getting-started/installation)
 
-## Getting Started
+## Installation
 
 ### 1. Clone the Repository
 
@@ -140,7 +140,7 @@ Ensure you have MetaMask installed in your browser and connected to the local An
     Add Patient Record: Enter the patient's name, diagnosis, and treatment, then click "Add Record" to add a new record.
     Authorize Healthcare Provider: Enter a provider's address and click "Authorize Provider" to grant them access to add records.
 
-Example Usage
+## Usage
 
     Authorize a Provider:
         Ensure you are connected to MetaMask and have the contract owner account selected.
