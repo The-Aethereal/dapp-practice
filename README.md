@@ -112,17 +112,16 @@ forge build
 5. Deploy the Smart Contract
 
 Deploy the Healthcare.sol smart contract to the local Anvil network:
-
+```sh
 forge script Blockchain-Healthcare/Deploying-Contract/script/Deploy.sol --rpc-url http://127.0.0.1:8545 --private-key add_private_key --broadcast
-
+```
 After deployment, you will see the contract address in the terminal output. Note this address, as you will need it later.
+
 6. Integrate with React Application
 6.1 Update Healthcare.js
 
 Open the src/Healthcare.js file and update the contractAddress with the address you noted from the deployment step. Also, ensure the contractABI is correctly defined.
-
 You can copy the ABI from Deploying-Contract/out/Healthcare.sol/HealthcareRecords.json
-
 const contractAddress = "YOUR_CONTRACT_ADDRESS";
 
 6.2 Run the React Application
