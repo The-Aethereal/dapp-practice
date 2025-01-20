@@ -1,6 +1,59 @@
 # Healthcare DApp
 
-This is a simple decentralized application (DApp) for managing healthcare records. It allows authorized providers to add and fetch patient records.
+This project is a decentralized healthcare application that allows patients to register, manage, and healthcare providers to manage, and interact with smart contracts.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Deployment](#deployment)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
+
+ ## Introduction
+
+The Blockchain Healthcare Application is designed to provide a secure and transparent way to manage patient records. It leverages smart contracts to ensure data integrity and access control. The application includes features for registering patients, adding records, and authorizing healthcare providers.
+
+## Features
+### 1. **Patient Registration**
+- **Description**: Patients can register themselves on the blockchain. Once registered, patients can manage their records and view their own health information.
+- **Usage**: Click the "Register as Patient" button to register yourself on the blockchain.
+
+### 2. **Record Management**
+- **Description**: Authorized healthcare providers can add, view, and manage patient records. Each record includes the patient's name, diagnosis, treatment, and timestamp.
+- **Usage**:
+  - **Add Record**: Enter the patient's ID, name, diagnosis, and treatment, then click "Add Record".
+  - **Fetch Records**: Enter the patient's ID and click "Fetch Records" to view the patient's records.
+  - **Fetch My Records**: Click "Fetch My Records" to view your own records.
+
+### 3. **Access Control**
+- **Description**: The application ensures that only authorized providers can add records, and only registered patients can view their own records. This provides a secure and controlled environment for managing sensitive health information.
+- **Usage**:
+  - **Authorize Provider**: Enter the provider's address and click "Authorize Provider" to authorize them to add records.
+
+### 4. **Event Logging**
+- **Description**: The application emits events for key actions such as patient registration, provider authorization, and record addition. These events can be used for auditing and logging purposes.
+- **Usage**: Events are automatically emitted and can be monitored using blockchain explorers or event listeners in the application.
+
+### 5. **Dark Mode**
+- **Description**: The application supports a dark mode for better user experience, especially in low-light environments. Users can toggle between light and dark modes.
+- **Usage**: Click the "Dark Mode" button to switch between light and dark modes.
+
+### 6. **Loading Indicators**
+- **Description**: The application provides visual feedback during loading states to enhance user experience. Loading indicators are displayed while fetching records, adding records, and authorizing providers.
+- **Usage**: Loading indicators are automatically shown during loading states and disappear once the action is complete.
+
+### 7. **Tooltips for Form Fields**
+- **Description**: Tooltips are provided for form fields to offer additional context or instructions. This helps users understand the required input and reduces errors.
+- **Usage**: Hover over form fields to see tooltips with additional information.
+
+### 8. **Animated Background**
+- **Description**: The application features an animated background to enhance the visual appeal and user engagement. The background animation is subtle and does not distract from the main content.
+- **Usage**: The animated background is automatically displayed when the application is loaded.
 
 ## Prerequisites
 
@@ -19,39 +72,44 @@ First, clone the repository to your local machine:
 ```sh
 git clone https://github.com/your-username/healthcare-dapp.git
 cd healthcare-dapp
-
+```
 2. Install Dependencies
 
 Install the necessary dependencies for the React application:
-
+```sh
 curl -L https://foundry.paradigm.sh | bash
 source ~/.bashrc
 cd src
 npm install
 npm install crypto-js ethers react web-vitals
+```
+## Deployment
 
 //Note that here it is deployed using Anvil , if you want you can deploy it using RemixIDE as well.
-2. Create a folder Deploying-Contract
+
+1. Create a folder Deploying-Contract
 
 navigate to the folder and setup
+```sh
 forge init --force --no-commit
+```
 now move Healthcare.sol into src/ and Deploy.sol into script/
-3. Launch Anvil
+2. Launch Anvil
 
 Anvil is a local Ethereum development environment. Start Anvil using Foundry:
-
+```sh
 cd ..
 foundryup
 anvil
-
+```
 3. Create `.env` file and Add your private key in it.
 
 4. Compile the Smart Contract
 
 Navigate to the root directory and compile the Healthcare.sol smart contract:
-
+```sh
 forge build
-
+```
 5. Deploy the Smart Contract
 
 Deploy the Healthcare.sol smart contract to the local Anvil network:
