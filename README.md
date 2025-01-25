@@ -147,21 +147,6 @@ Ensure you have MetaMask installed in your browser and connected to the local An
     Add Patient Record: Enter the patient's name, diagnosis, and treatment, then click "Add Record" to add a new record.
     Authorize Healthcare Provider: Enter a provider's address and click "Authorize Provider" to grant them access to add records.
 
-## Usage
-
-    Authorize a Provider:
-        Ensure you are connected to MetaMask and have the contract owner account selected.
-        Run the authorizeProvider function with the provider's address.
-
-    Add a Record:
-        Ensure you are connected to MetaMask and have an authorized provider account selected.
-        Run the addRecord function with the patient ID, name, diagnosis, and treatment.
-
-    Fetch Records:
-        Ensure you are connected to MetaMask and have an authorized provider account selected.
-        Run the getPatientRecords function with the patient ID to fetch the records.
-
-
 ## Project_Structure
 
 Blockchain-Healthcare/
