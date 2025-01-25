@@ -54,6 +54,9 @@ The Blockchain Healthcare Application is designed to provide a secure and transp
 - **Description**: The application features an animated background to enhance the visual appeal and user engagement. The background animation is subtle and does not distract from the main content.
 - **Usage**: The animated background is automatically displayed when the application is loaded.
 
+![image](https://github.com/user-attachments/assets/148521b2-cdd4-46fc-80e7-8925106a9f0b)
+
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
