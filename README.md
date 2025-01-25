@@ -6,9 +6,9 @@ This project is a decentralized healthcare application that allows patients to r
 
 - [Introduction](#introduction)
 - [Features](#features)
+- [Running](#running)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Deployment](#deployment)
 - [Project_Structure](#Project_Structure)
 - [License](#license)
@@ -56,6 +56,10 @@ The Blockchain Healthcare Application is designed to provide a secure and transp
 
 ![image](https://github.com/user-attachments/assets/148521b2-cdd4-46fc-80e7-8925106a9f0b)
 
+## Running 
+1. npm install
+2. Update the smart contract address and abi in Healthcare.js file.
+3. npm start
 
 ## Prerequisites
 
