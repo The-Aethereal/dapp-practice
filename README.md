@@ -58,7 +58,8 @@ The Blockchain Healthcare Application is designed to provide a secure and transp
 
 ## Running 
 1. npm install
-2. Update the smart contract address and abi in Healthcare.js file.
+2. Copy and deploy Healthcare.sol using Remix IDE.
+2. Update the smart contract address and abi from Remix into Healthcare.js file.
 3. npm start
 
 ## Prerequisites
